@@ -1,15 +1,16 @@
+/* ===== BASIS ===== */
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Pacifico', cursive;
+  color: white;
   background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
   background-size: 400% 400%;
   animation: gradientMove 10s ease infinite;
-  margin: 0;
-  padding: 0;
-  color: white;
 }
 
 @keyframes gradientMove {
@@ -18,6 +19,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* ===== HEADER ===== */
 header {
   text-align: center;
   padding: 60px 20px;
@@ -33,6 +35,7 @@ header p {
   margin-top: 10px;
 }
 
+/* ===== SECTION ===== */
 section {
   max-width: 800px;
   margin: 40px auto;
@@ -40,24 +43,25 @@ section {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
 }
 
-.knop-container {
-  margin: 20px 0;
-  text-align: center;
+section:hover {
+  transform: translateY(-5px);
 }
 
-details {
+/* ===== DETAILS KNOPPEN ===== */
+.knoppen-sectie details {
   margin: 20px 0;
   text-align: center;
 }
 
 summary {
-  list-style: none; /* haalt het standaard pijltje weg */
+  list-style: none;
 }
 
 summary::-webkit-details-marker {
-  display: none; /* haalt pijltje weg in Chrome */
+  display: none;
 }
 
 .mijn-knop {
@@ -80,6 +84,7 @@ summary::-webkit-details-marker {
     0 0 20px rgba(255, 81, 47, 0.6);
 }
 
+/* ===== INHOUD ANIMATIE ===== */
 .inhoud {
   margin-top: 20px;
   animation: fadeIn 0.4s ease-in-out;
@@ -90,32 +95,95 @@ summary::-webkit-details-marker {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* het uitklap-element standaard verbergen */
-.uitklap {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  margin-top: 10px;
-  opacity: 0;
-}
-
-/* alleen openen als je op de knop zelf hover */
-.mijn-knop:hover + .uitklap {
-  max-height: 500px;
-  opacity: 1;
-}
-
+/* ===== AFBEELDING ===== */
 img {
   border-radius: 15px;
-  margin-top: 15px;
   max-width: 100%;
   height: auto;
 }
 
-section {
-  transition: transform 0.3s ease;
+/* ===== FORMULIER ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-section:hover {
-  transform: translateY(-5px);
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(255,81,47,0.6);
+}
+
+button {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== BEVESTIGING ===== */
+#form-confirmation {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: #2ecc71;
+}
+
+/* ===== SLIDESHOW ===== */
+.slideshow-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  height: 300px; /* vaste hoogte zodat details knop blijft werken */
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: slideAnim 9s infinite;
+  border-radius: 15px;
+}
+
+/* Animatie timing: 3 seconden per foto */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+
+@keyframes slideAnim {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
 }
