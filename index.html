@@ -13,31 +13,54 @@
     <p>Gebouwd op Linux 😎</p>
   </header>
 
-<section class="knoppen-sectie">
+  <section class="knoppen-sectie">
 
-  <details>
-    <summary class="mijn-knop">Foto</summary>
-    <div class="inhoud">
-      <img src=".\foto.jpg" alt="Mijn foto" width="300">
-    </div>
-  </details>
+    <!-- Contactformulier knop -->
+    <details>
+      <summary class="mijn-knop">Contactformulier</summary>
+      <div class="inhoud">
+        <form id="contact-form" action="https://formspree.io/f/xeelerbn" method="POST">
+          <input type="text" name="naam" placeholder="Jouw naam" required>
+          <input type="email" name="email" placeholder="Jouw email" required>
+          <textarea name="bericht" placeholder="Jouw bericht" rows="5" required></textarea>
+          <button type="submit">Verzend</button>
+        </form>
+        <p id="form-confirmation" style="display:none; color: #2ecc71; margin-top: 10px;">
+          Je bericht is verzonden! 🎉
+        </p>
+      </div>
+    </details>
 
-  <details>
-    <summary class="mijn-knop">Over mij</summary>
-    <div class="inhoud">
-      <p>Hier komt mijn verhaal over mijzelf.</p>
-    </div>
-  </details>
+    <!-- Foto knop met slideshow -->
+    <details>
+      <summary class="mijn-knop">Foto's</summary>
+      <div class="inhoud slideshow-container">
+        <div class="slide-wrapper">
+          <img class="slide" src="foto1.jpg" alt="Foto 1">
+          <img class="slide" src="foto2.jpg" alt="Foto 2">
+          <img class="slide" src="foto3.jpg" alt="Foto 3">
+        </div>
+      </div>
+    </details>
 
-  <details>
-    <summary class="mijn-knop">Contact</summary>
-    <div class="inhoud">
-      <p>Email: /</p>
-      <p>GSM: /</p>
-    </div>
-  </details>
+    <!-- Over mij knop -->
+    <details>
+      <summary class="mijn-knop">Over mij</summary>
+      <div class="inhoud">
+        <p>Hier komt mijn verhaal over mijzelf.</p>
+      </div>
+    </details>
 
-</section>
+    <!-- Contact info knop -->
+    <details>
+      <summary class="mijn-knop">Contact</summary>
+      <div class="inhoud">
+        <p>Email: /</p>
+        <p>GSM: /</p>
+      </div>
+    </details>
+
+  </section>
 
 </body>
 </html>
