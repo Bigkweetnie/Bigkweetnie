@@ -8,14 +8,47 @@
 </head>
 <body>
 
+  <!-- NAVIGATIEBALK -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#foto-sectie">Foto's</a></li>
+      <li><a href="#over-mij">Over mij</a></li>
+      <li><a href="#contact-formulier">Contactformulier</a></li>
+      <li><a href="#contact-info">Contact info</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Welkom op mijn website</h1>
     <p>Gebouwd op Linux 😎</p>
   </header>
 
-  <section class="knoppen-sectie">
+  <!-- FOTO SLIDESHOW KNOP -->
+  <section id="foto-sectie" class="knoppen-sectie">
+    <details>
+      <summary class="mijn-knop">Foto's</summary>
+      <div class="inhoud slideshow-container">
+        <div class="slide-wrapper">
+          <img class="slide" src="images/foto1.jpg" alt="Foto 1">
+          <img class="slide" src="images/foto2.jpg" alt="Foto 2">
+          <img class="slide" src="images/foto3.jpg" alt="Foto 3">
+        </div>
+      </div>
+    </details>
+  </section>
 
-    <!-- Contactformulier knop -->
+  <!-- OVER MIJ KNOP -->
+  <section id="over-mij">
+    <details>
+      <summary class="mijn-knop">Over mij</summary>
+      <div class="inhoud">
+        <p>Hier komt mijn verhaal over mijzelf.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- CONTACTFORMULIER KNOP -->
+  <section id="contact-formulier">
     <details>
       <summary class="mijn-knop">Contactformulier</summary>
       <div class="inhoud">
@@ -30,36 +63,17 @@
         </p>
       </div>
     </details>
+  </section>
 
-    <!-- Foto knop met slideshow -->
+  <!-- CONTACT INFO KNOP -->
+  <section id="contact-info">
     <details>
-      <summary class="mijn-knop">Foto's</summary>
-      <div class="inhoud slideshow-container">
-        <div class="slide-wrapper">
-          <img class="slide" src="images/foto1.jpg" alt="Foto 1">
-          <img class="slide" src="images/foto1.jpg.jpg" alt="Foto 2">
-          <img class="slide" src="images/foto1.jpg" alt="Foto 3">
-        </div>
-      </div>
-    </details>
-
-    <!-- Over mij knop -->
-    <details>
-      <summary class="mijn-knop">Over mij</summary>
-      <div class="inhoud">
-        <p>Hier komt mijn verhaal over mijzelf.</p>
-      </div>
-    </details>
-
-    <!-- Contact info knop -->
-    <details>
-      <summary class="mijn-knop">Contact</summary>
+      <summary class="mijn-knop">Contact info</summary>
       <div class="inhoud">
         <p>Email: /</p>
         <p>GSM: /</p>
       </div>
     </details>
-
   </section>
 
 </body>
