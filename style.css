@@ -1,3 +1,4 @@
+
 body {
   font-family: Pacifico, cursive;
   background-color: #000000;
@@ -19,4 +20,39 @@ section {
   border-radius: 10px;
 }
 
+.knop-container {
+  margin: 20px 0;
+  text-align: center;
+}
 
+.mijn-knop {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* hover op knop zelf */
+.mijn-knop:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* het uitklap-element standaard verbergen */
+.uitklap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+/* alleen openen als je op de knop zelf hover */
+.mijn-knop:hover + .uitklap {
+  max-height: 500px;
+  opacity: 1;
+}
