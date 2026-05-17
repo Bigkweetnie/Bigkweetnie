@@ -1,80 +1,361 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Mijn Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage Eindwerk – Team Wauw | 5df Como</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATIEBALK -->
-  <nav>
-    <ul class="navbar">
-      <li><a href="#foto-sectie">Foto's</a></li>
-      <li><a href="#over-mij">Over mij</a></li>
-      <li><a href="#contact-formulier">Contactformulier</a></li>
-      <li><a href="#contact-info">Contact info</a></li>
-    </ul>
-  </nav>
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <div>
+        <span class="logo-text">TEAM <span>WAUW</span></span>
+        <span class="logo-sub">Stage Eindwerk · 5df Como</span>
+      </div>
+    </div>
+    <nav id="main-nav">
+      <button class="active" onclick="showTab(0)">Bedrijf</button>
+      <button onclick="showTab(1)">Zoektocht</button>
+      <button onclick="showTab(2)">Observatie</button>
+      <button onclick="showTab(3)">Praktische Stage</button>
+      <button onclick="showTab(4)">Vaardigheden</button>
+      <button onclick="showTab(5)">Persoonlijke Groei</button>
+      <button onclick="showTab(6)">Evaluatie</button>
+    </nav>
+  </div>
+</header>
 
-  <header>
-    <h1>Welkom op mijn website</h1>
-    <p>Gebouwd op Linux 😎</p>
-  </header>
+<div class="hero">
+  <h1>WAUW UP YOUR EVENTS!</h1>
+  <p>Stage eindwerk – Voorstelling van mijn stageplaats Team Wauw & mijn stageverhaal</p>
+  <div class="badge-row">
+    <span class="badge">Hospitality &amp; Events</span>
+    <span class="badge">Kortrijk</span>
+    <span class="badge">Opgericht 2020</span>
+    <span class="badge">18 vaste medewerkers</span>
+    <span class="badge">1750+ crew members</span>
+  </div>
+</div>
 
-  <!-- FOTO SLIDESHOW KNOP -->
-  <section id="foto-sectie" class="knoppen-sectie">
-    <details>
-      <summary class="mijn-knop">Foto's</summary>
-      <div class="inhoud slideshow-container">
-        <div class="slide-wrapper">
-          <img class="slide" src="images/foto1.jpg" alt="Foto 1">
-          <img class="slide" src="images/foto2.jpg" alt="Foto 2">
-          <img class="slide" src="images/foto3.jpg" alt="Foto 3">
+<main>
+
+  <!-- TAB 1 -->
+  <div class="tab-panel active" id="tab-0">
+    <div class="card">
+      <div class="card-title">
+        <div class="card-icon">🏢</div>
+        <h2>Voorstelling van het stagebedrijf</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-item"><div class="info-label">Naam</div><div class="info-value">Team Wauw</div></div>
+        <div class="info-item"><div class="info-label">Slogan</div><div class="info-value">Wauw Up Your Events!</div></div>
+        <div class="info-item"><div class="info-label">Locatie</div><div class="info-value">Doorniksestreenweg 81a, 8500 Kortrijk</div></div>
+        <div class="info-item"><div class="info-label">Oprichter</div><div class="info-value">Jonathan Theys</div></div>
+        <div class="info-item"><div class="info-label">Oprichtingsjaar</div><div class="info-value">2020</div></div>
+        <div class="info-item"><div class="info-label">Sector</div><div class="info-value">Evenementen &amp; Hospitality</div></div>
+        <div class="info-item"><div class="info-label">Vaste medewerkers</div><div class="info-value">18</div></div>
+        <div class="info-item"><div class="info-label">Crew members</div><div class="info-value">1750+</div></div>
+      </div>
+    </div>
+
+    <div class="card accent-top">
+      <div class="card-title"><div class="card-icon">📊</div><h3>Team Wauw in cijfers</h3></div>
+      <div class="stat-row">
+        <div class="stat-box"><div class="stat-num">1750+</div><div class="stat-lbl">Crew Members</div></div>
+        <div class="stat-box"><div class="stat-num">18</div><div class="stat-lbl">Vaste medewerkers</div></div>
+        <div class="stat-box"><div class="stat-num">2020</div><div class="stat-lbl">Oprichtingsjaar</div></div>
+        <div class="stat-box"><div class="stat-num">24/7</div><div class="stat-lbl">Bereikbaar</div></div>
+        <div class="stat-box"><div class="stat-num">8</div><div class="stat-lbl">Crew-types</div></div>
+        <div class="stat-box"><div class="stat-num">365</div><div class="stat-lbl">Dagen/jaar</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><div class="card-icon">📋</div><h3>Organogram</h3></div>
+      <div class="organogram">
+        <div class="org-tree">
+          <div class="org-level">
+            <div class="org-node top">Jonathan Theys<br><small>CEO &amp; Oprichter</small></div>
+          </div>
+          <div class="org-connector"></div>
+          <div class="org-connector-spread"></div>
+          <div class="org-connector"></div>
+          <div class="org-level" style="gap:1rem;flex-wrap:wrap;">
+            <div class="org-node">Management Team<br><small>Leidinggevenden</small></div>
+            <div class="org-node">Sarah<br><small>Stagebegeleidster</small></div>
+            <div class="org-node">IT &amp; Admin<br><small>Back-office</small></div>
+          </div>
+          <div class="org-connector"></div>
+          <div class="org-connector-spread"></div>
+          <div class="org-connector"></div>
+          <div class="org-level" style="gap:.75rem;flex-wrap:wrap;">
+            <div class="org-node light">Catering &amp; Bartenders</div>
+            <div class="org-node light">Hosts &amp; Hostessen</div>
+            <div class="org-node light">Stewards</div>
+            <div class="org-node light">Animatoren</div>
+            <div class="org-node light">Promoboys &amp; Girls</div>
+            <div class="org-node light">Stagehands</div>
+            <div class="org-node light">Parkingboys &amp; Girls</div>
+            <div class="org-node light">Coördinatoren</div>
+          </div>
         </div>
       </div>
-    </details>
-  </section>
+    </div>
 
-  <!-- OVER MIJ KNOP -->
-  <section id="over-mij">
-    <details>
-      <summary class="mijn-knop">Over mij</summary>
-      <div class="inhoud">
-        <p>Hier komt mijn verhaal over mijzelf.</p>
+    <div class="card">
+      <div class="card-title"><div class="card-icon">🎯</div><h3>Missie, Visie &amp; Waarden</h3></div>
+      <div class="mv-grid">
+        <div class="mv-box">
+          <div class="mv-label">Missie</div>
+          <p>Het leveren van een memorabele service door gepassioneerde professionals.</p>
+        </div>
+        <div class="mv-box">
+          <div class="mv-label">Visie</div>
+          <p>Groei, creativiteit en nuchterheid. Uitgroeien tot de meest betrouwbare hospitality-partner in België.</p>
+        </div>
+        <div class="mv-box">
+          <div class="mv-label">Kernwaarden</div>
+          <div class="tag-row">
+            <span class="tag">Gastvrijheid</span>
+            <span class="tag">Kwaliteit</span>
+            <span class="tag">Flexibiliteit</span>
+            <span class="tag">24/7 beschikbaar</span>
+          </div>
+        </div>
       </div>
-    </details>
-  </section>
+      <div class="values-row" style="margin-top:1.5rem;">
+        <div class="value-card"><div class="vc-icon">💡</div><div class="vc-name">Dedication</div><div class="vc-text">Je kiest zelf waar, wanneer en met wie je werkt.</div></div>
+        <div class="value-card"><div class="vc-icon">👨‍👩‍👧‍👦</div><div class="vc-name">Family</div><div class="vc-text">Bij Team Wauw zijn we one big happy family.</div></div>
+        <div class="value-card"><div class="vc-icon">💪</div><div class="vc-name">Empowerment</div><div class="vc-text">Weinig ervaring? No problemo! Leren doe je in het werkveld.</div></div>
+        <div class="value-card"><div class="vc-icon">🔥</div><div class="vc-name">Eager</div><div class="vc-text">Beklim de crewladder en word teamleader in no time.</div></div>
+        <div class="value-card"><div class="vc-icon">🎉</div><div class="vc-name">Fun</div><div class="vc-text">Voor sfeer en gezelligheid een tien!</div></div>
+      </div>
+    </div>
 
-  <!-- CONTACTFORMULIER KNOP -->
-  <section id="contact-formulier">
-    <details>
-      <summary class="mijn-knop">Contactformulier</summary>
-      <div class="inhoud">
-        <form id="contact-form" action="https://formspree.io/f/xeelerbn" method="POST">
-          <input type="text" name="naam" placeholder="Jouw naam" required>
-          <input type="email" name="email" placeholder="Jouw email" required>
-          <textarea name="bericht" placeholder="Jouw bericht" rows="5" required></textarea>
-          <button type="submit">Verzend</button>
-        </form>
-        <p id="form-confirmation" style="display:none; color: #2ecc71; margin-top: 10px;">
-          Je bericht is verzonden! 🎉
-        </p>
+    <div class="card">
+      <div class="card-title"><div class="card-icon">🎪</div><h3>Kernactiviteiten &amp; Aanbod</h3></div>
+      <div class="services-grid">
+        <div class="service-chip"><div class="sc-icon">🍸</div><div class="sc-name">Catering &amp; Bartenders</div></div>
+        <div class="service-chip"><div class="sc-icon">🎙️</div><div class="sc-name">Hosts &amp; Hostessen</div></div>
+        <div class="service-chip"><div class="sc-icon">📢</div><div class="sc-name">Promoboys &amp; Girls</div></div>
+        <div class="service-chip"><div class="sc-icon">🚗</div><div class="sc-name">Parkingboys &amp; Girls</div></div>
+        <div class="service-chip"><div class="sc-icon">🦺</div><div class="sc-name">Stewards</div></div>
+        <div class="service-chip"><div class="sc-icon">🎭</div><div class="sc-name">Animatoren</div></div>
+        <div class="service-chip"><div class="sc-icon">🔧</div><div class="sc-name">Stagehands</div></div>
+        <div class="service-chip"><div class="sc-icon">⭐</div><div class="sc-name">Coördinatoren</div></div>
       </div>
-    </details>
-  </section>
+    </div>
+  </div>
 
-  <!-- CONTACT INFO KNOP -->
-  <section id="contact-info">
-    <details>
-      <summary class="mijn-knop">Contact info</summary>
-      <div class="inhoud">
-        <p>Email: /</p>
-        <p>GSM: /</p>
+  <!-- TAB 2 -->
+  <div class="tab-panel" id="tab-1">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">🔍</div><h2>De zoektocht naar een stageplaats</h2></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-head">Hoe verliep mijn zoektocht?</div>
+          <p>De zoektocht liep zeer vlot. Ik moest direct denken aan mijn vakantiejob en heb hen meteen gecontacteerd. Het heeft niet lang geduurd voordat ik reactie kreeg.</p>
+          <div class="tag-row"><span class="tag green">Vlot verlopen</span><span class="tag green">Snel reactie</span><span class="tag green">Direct bevestigd</span></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head">Hoe ben ik in contact gekomen?</div>
+          <p>Het is dezelfde plek als waar ik werk als jobstudent. Door mijn ervaring wist ik al wie ik moest contacteren en kende ik het bedrijf van binnenuit.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head">Waarom koos ik voor dit bedrijf?</div>
+          <p>Het leek me een toffe plek om stage te doen en ik had er al kennis over. Ze konden mij ook de helft van mijn doelstellingen aanbieden.</p>
+          <div class="tag-row"><span class="tag">Reeds bekend</span><span class="tag">Doelstellingen mogelijk</span><span class="tag">Positieve sfeer</span></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-head">Hoe verliep de kennismaking?</div>
+          <p>Zeer goed. Alles verliep soepel. Mijn stagebegeleidster Sarah ontving mij hartelijk en stelde direct duidelijke verwachtingen op.</p>
+          <div class="tag-row"><span class="tag green">Soepele kennismaking</span><span class="tag green">Vertrouwde omgeving</span></div>
+        </div>
       </div>
-    </details>
-  </section>
+      <div class="pull-quote">Het grote voordeel was dat ik Team Wauw al kende als jobstudent. Ik kon meteen aan de slag zonder lange gewenningsperiode.</div>
+    </div>
+  </div>
+
+  <!-- TAB 3 -->
+  <div class="tab-panel" id="tab-2">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">👁️</div><h2>De observatiestage</h2></div>
+      <div class="reflection-block">
+        <div class="rb-label">📌 Taken geobserveerd &amp; uitgevoerd</div>
+        <ul style="padding-left:1.2rem;color:var(--text-mid);">
+          <li style="margin-bottom:.5rem;">Bijwonen van een <strong>marketing meeting</strong></li>
+          <li>Werknemers <strong>archiveren</strong> via Payroller</li>
+        </ul>
+      </div>
+      <div class="reflection-block plus">
+        <div class="rb-label">📚 Wat heb ik geleerd?</div>
+        <p>Ik heb geleerd hoe de marketing van het bedrijf in elkaar zit en hoe ik met het Payroller-programma moet werken.</p>
+        <div class="tag-row"><span class="tag green">Marketing inzicht</span><span class="tag green">Payroller kennis</span><span class="tag green">HR processen</span></div>
+      </div>
+      <div class="reflection-block star">
+        <div class="rb-label">🎯 Vaardigheden die ik verder wou ontwikkelen</div>
+        <p>Telefonisch en schriftelijk communiceren op professioneel niveau met klanten en werknemers.</p>
+        <div class="tag-row"><span class="tag orange">Klantcommunicatie</span><span class="tag orange">Telefonische vaardigheden</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4 -->
+  <div class="tab-panel" id="tab-3">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">💼</div><h2>De praktische stage</h2></div>
+      <p>Tijdens mijn praktische stage heb ik een gevarieerd pakket aan taken uitgevoerd in de back-office van Team Wauw.</p>
+    </div>
+    <div class="card accent-top">
+      <div class="card-title"><div class="card-icon">📝</div><h3>Overzicht stageactiviteiten</h3></div>
+      <ul class="activity-list">
+        <li><div class="act-icon">🔗</div><div class="act-text"><strong>Contactpersonen toevoegen aan nieuwe website</strong><span>Contactpersonen van klanten linken aan hun bijhorend bedrijf op de nieuwe Wauwspace.</span></div></li>
+        <li><div class="act-icon">📬</div><div class="act-text"><strong>Factuuradressen toevoegen aan nieuwe website</strong><span>Factuurgegevens van klanten integreren in de nieuwe website.</span></div></li>
+        <li><div class="act-icon">⭐</div><div class="act-text"><strong>Prestatiesterren migreren</strong><span>Beoordelingssterren van werknemers overbrengen van de oude naar de nieuwe website.</span></div></li>
+        <li><div class="act-icon">👤</div><div class="act-text"><strong>Nieuwe werknemers toevoegen aan Payroller</strong><span>Persoonlijke gegevens van nieuwe crew members verwerken.</span></div></li>
+        <li><div class="act-icon">📊</div><div class="act-text"><strong>Concurrentieanalyse sociale media</strong><span>Grote concurrenten analyseren en verbeteringsideeën formuleren voor Team Wauw.</span></div></li>
+        <li><div class="act-icon">📁</div><div class="act-text"><strong>Voorbereiding boekhouding Maart – Barra</strong><span>Excel-bestand samenstellen van alle jobs uitgevoerd in maart 2025.</span></div></li>
+        <li><div class="act-icon">💬</div><div class="act-text"><strong>Reviews verwerken</strong><span>Ontvangen reviews structureren in overzichtelijke bijlagen voor de website.</span></div></li>
+        <li><div class="act-icon">🔄</div><div class="act-text"><strong>Extra werknemersinfo migreren</strong><span>Aanvullende profielinformatie overbrengen van de oude naar de nieuwe website.</span></div></li>
+        <li><div class="act-icon">📞</div><div class="act-text"><strong>Nieuwe werknemers opbellen</strong><span>Telefonisch contact opnemen om profielen te vervolledigen.</span></div></li>
+        <li><div class="act-icon">🤝</div><div class="act-text"><strong>Concurrentiedocument overlopen met Sarah</strong><span>Het analyse-document bespreken en bijsturen.</span></div></li>
+        <li><div class="act-icon">🏢</div><div class="act-text"><strong>Klantinfo in nieuwe Wauwspace brengen</strong><span>Klantgegevens opzoeken en verwerken.</span></div></li>
+        <li><div class="act-icon">💾</div><div class="act-text"><strong>Data uit oude Wauwspace naar Excel exporteren</strong><span>Urgente boekhoudkundige data overdragen voor de sluiting van de oude website.</span></div></li>
+        <li><div class="act-icon">✉️</div><div class="act-text"><strong>Klantgegevens feest verzamelen</strong><span>Gegevens verzamelen van uitgenodigde klanten voor een evenement van de CEO.</span></div></li>
+        <li><div class="act-icon">📲</div><div class="act-text"><strong>Werknemers met onvolledig profiel contacteren</strong><span>Via telefoon en e-mail werknemers aansporen hun profiel te vervolledigen.</span></div></li>
+        <li><div class="act-icon">⚙️</div><div class="act-text"><strong>Contactfuncties aanpassen in Wauwspace</strong><span>Contacten aanpassen van 'extra' naar 'main' voor mailing-lijsten.</span></div></li>
+      </ul>
+    </div>
+    <div class="card green-top">
+      <div class="card-title"><div class="card-icon">👍</div><h3>Favoriete stageactiviteiten</h3></div>
+      <div class="reflection-block plus">
+        <div class="rb-label">✅ Wat vond ik leuk?</div>
+        <p><strong>Concurrentieanalyse:</strong> Ik vond het heel tof om Team Wauw te vergelijken met de concurrentie en concrete verbeteringstips aan te reiken.</p>
+        <p><strong>Werknemers opbellen:</strong> In het begin stressvol, maar het werd een echte kracht.</p>
+        <div class="tag-row"><span class="tag green">Strategisch denken</span><span class="tag green">Eigen inbreng</span></div>
+      </div>
+    </div>
+    <div class="card red-top">
+      <div class="card-title"><div class="card-icon">👎</div><h3>Minder leuke activiteiten</h3></div>
+      <div class="reflection-block minus">
+        <div class="rb-label">❌ Wat vond ik niet leuk?</div>
+        <p>Repetitief bureauwerk zoals de data-migratie. Vier uur hetzelfde werk uitvoeren was vermoeiend.</p>
+        <div class="tag-row"><span class="tag red">Repetitief</span><span class="tag red">Weinig afwisseling</span></div>
+      </div>
+    </div>
+    <div class="card purple-top">
+      <div class="card-title"><div class="card-icon">🖥️</div><h3>Digitale tools &amp; software</h3></div>
+      <div class="info-grid">
+        <div class="info-item"><div class="info-label">Payroller</div><div class="info-value" style="font-weight:400;font-size:.9rem;">Zeer interessant en leerrijk.</div></div>
+        <div class="info-item"><div class="info-label">Excel</div><div class="info-value" style="font-weight:400;font-size:.9rem;">Al gekend, geen problemen.</div></div>
+        <div class="info-item"><div class="info-label">Word</div><div class="info-value" style="font-weight:400;font-size:.9rem;">Gebruikt voor concurrentieanalyse.</div></div>
+        <div class="info-item"><div class="info-label">Wauwspace</div><div class="info-value" style="font-weight:400;font-size:.9rem;">Intern platform, veel bijgeleerd.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 5 -->
+  <div class="tab-panel" id="tab-4">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">🧠</div><h2>Reflectie op vaardigheden &amp; kennis</h2></div>
+      <div class="reflection-block plus">
+        <div class="rb-label">📈 Ontwikkelde vaardigheden</div>
+        <p><strong>Communicatie:</strong> Mijn communicatievaardigheden zijn sterk verbeterd. Ik kan nu moeiteloos werknemers opbellen en de nodige vragen stellen.</p>
+        <p><strong>Probleemoplossend denken:</strong> Door de concurrentieanalyse moest ik zelfstandig nadenken over verbetermogelijkheden.</p>
+        <div class="tag-row"><span class="tag green">Communicatie</span><span class="tag green">Probleemoplossend denken</span><span class="tag green">Zelfstandig werken</span></div>
+      </div>
+      <div class="reflection-block star">
+        <div class="rb-label">📖 Theorie toegepast</div>
+        <p>Kennis van <strong>Odoo</strong> uit de lessen kwam direct van pas bij Payroller. Beide platforms hebben gelijkaardige functies.</p>
+        <div class="tag-row"><span class="tag">Odoo → Payroller</span><span class="tag">ERP/CRM kennis</span></div>
+      </div>
+      <div class="reflection-block">
+        <div class="rb-label">📦 Productkennis</div>
+        <p>Als jobstudent had ik al de nodige kennis om de diensten van Team Wauw goed te begrijpen en te verklaren.</p>
+      </div>
+      <div class="reflection-block grow">
+        <div class="rb-label">💡 Eigen bijdrage aan nieuwe ideeën</div>
+        <p>Via de concurrentieanalyse bracht ik verbeteringsideeën aan op marketingvlak, werknemersbegeleiding en klantenbeheer. Sarah vroeg mij het document te vervolledigen met een conclusie.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6 -->
+  <div class="tab-panel" id="tab-5">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">🌱</div><h2>Persoonlijke groei</h2></div>
+      <div class="reflection-block plus">
+        <div class="rb-label">💪 Sterke punten</div>
+        <p>Ik werkte altijd vlot door en kreeg mijn werk klaar binnen de deadlines. Eenmaal ik een taak kreeg, werkte ik heel doelgericht.</p>
+        <div class="tag-row"><span class="tag green">Doelgericht</span><span class="tag green">Deadlines gehaald</span><span class="tag green">Zelfstandig</span></div>
+      </div>
+      <div class="reflection-block star">
+        <div class="rb-label">🏆 Waar ben ik trots op?</div>
+        <p>Trots op de hoeveelheid werk die ik volbracht heb en op de <strong>concurrentieanalyse</strong> die ik mocht presenteren aan het management.</p>
+      </div>
+      <div class="reflection-block">
+        <div class="rb-label">📚 Leerpunten</div>
+        <p>Ik heb geleerd dat ik zeer doelgericht kan werken, maar dat bureauwerk op lange termijn niet mijn ideale omgeving is.</p>
+        <div class="tag-row"><span class="tag">Bureauwerk ≠ toekomst</span><span class="tag">Meer dynamiek gewenst</span></div>
+      </div>
+      <div class="reflection-block grow">
+        <div class="rb-label">🎯 Verbeterpunten</div>
+        <p>Mijn sociale vaardigheden zijn mijn grootste werkpunt. Informeel sociaal contact en smalltalk met collega's wil ik verder ontwikkelen.</p>
+        <div class="tag-row"><span class="tag orange">Sociale vaardigheden</span><span class="tag orange">Netwerken</span></div>
+      </div>
+      <div class="reflection-block">
+        <div class="rb-label">🤝 Teamwerking</div>
+        <p>Professionele communicatie verliep soepel. Op persoonlijk vlak was socialiseren moeilijker — een aandachtspunt voor de toekomst.</p>
+        <div class="tag-row"><span class="tag green">Vlotte werkcommunicatie</span><span class="tag orange">Persoonlijk contact verbeteren</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 7 -->
+  <div class="tab-panel" id="tab-6">
+    <div class="card">
+      <div class="card-title"><div class="card-icon">⭐</div><h2>Evaluatie van de stageplaats</h2></div>
+      <div class="reflection-block plus">
+        <div class="rb-label">👥 Begeleiding</div>
+        <p>Ik werd zeer goed begeleid. Al mijn collega's hielpen mij wanneer nodig. Stagebegeleidster <strong>Sarah</strong> was bereikbaar en zorgde voor regelmatige feedback.</p>
+        <div class="tag-row"><span class="tag green">Uitstekende begeleiding</span><span class="tag green">Duidelijke communicatie</span></div>
+      </div>
+      <div class="reflection-block">
+        <div class="rb-label">🎓 Aansluiting bij studie &amp; toekomst</div>
+        <p>De stage sloot goed aan bij mijn studie. Ik behaalde een groot deel van mijn leerdoelstellingen. Puur bureauwerk is echter niets voor mij — ik wil meer afwisseling en menselijk contact.</p>
+        <div class="tag-row"><span class="tag green">Leerdoelen behaald</span><span class="tag orange">Bureauwerk geen toekomst</span></div>
+      </div>
+      <div class="pull-quote">Deze stage heeft mij meer geleerd over mezelf dan over het werk. Ik weet nu duidelijk wat ik wil en wat ik niet wil in mijn toekomstige carrière.</div>
+      <div class="stat-row" style="margin-top:1.5rem;">
+        <div class="stat-box"><div class="stat-num">✅</div><div class="stat-lbl">Doelen behaald</div></div>
+        <div class="stat-box"><div class="stat-num">15+</div><div class="stat-lbl">Stageactiviteiten</div></div>
+        <div class="stat-box"><div class="stat-num">⭐⭐⭐⭐</div><div class="stat-lbl">Begeleiding</div></div>
+        <div class="stat-box"><div class="stat-num">📈</div><div class="stat-lbl">Persoonlijke groei</div></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>Stage eindwerk – <strong>5df Como</strong> · GO! Atheneum Avelgem · Deadline: 27/05/2026 · Stagebedrijf: <strong>Team Wauw</strong></p>
+  <p style="margin-top:.4rem;font-size:.75rem;">Doorniksestreenweg 81a, 8500 Kortrijk · <a href="https://teamwauw.be" target="_blank">teamwauw.be</a></p>
+</footer>
+
+<script>
+  function showTab(index) {
+    document.querySelectorAll('.tab-panel').forEach((p, i) => {
+      p.classList.toggle('active', i === index);
+    });
+    document.querySelectorAll('#main-nav button').forEach((b, i) => {
+      b.classList.toggle('active', i === index);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 
 </body>
 </html>
