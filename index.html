@@ -11,11 +11,12 @@
 <header>
   <div class="header-inner">
     <div class="logo-wrap">
-      <div>
-        <span class="logo-text">TEAM <span>WAUW</span></span>
-        <span class="logo-sub">Stage Eindwerk · 5df Como</span>
-      </div>
-    </div>
+  <img src="images/logo.jpeg" alt="Team Wauw logo" style="height:40px;object-fit:contain;">
+  <div>
+    <span class="logo-text">TEAM <span>WAUW</span></span>
+    <span class="logo-sub">Stage Eindwerk · 5df Como</span>
+  </div>
+</div>
     <nav id="main-nav">
       <button class="active" onclick="showTab(0)">Bedrijf</button>
       <button onclick="showTab(1)">Zoektocht</button>
@@ -29,15 +30,9 @@
   </div>
 </header>
 
-<div class="hero">
-  <h1>WAUW UP YOUR EVENTS!</h1>
-  <p>Stage eindwerk – Voorstelling van mijn stageplaats Team Wauw & mijn stageverhaal</p>
-  <div class="badge-row">
-    <span class="badge">Hospitality &amp; Events</span>
-    <span class="badge">Kortrijk</span>
-    <span class="badge">Opgericht 2020</span>
-    <span class="badge">18 vaste medewerkers</span>
-    <span class="badge">1750+ crew members</span>
+<div id="hero-banner" class="hero">
+    <h1>WAUW UP YOUR EVENTS!</h1>
+    <p>Stage eindwerk – Voorstelling van mijn stageplaats Team Wauw & mijn stageverhaal</p>
   </div>
 </div>
 
@@ -385,7 +380,7 @@
 </main>
 
 <footer>
-  <p>Stage eindwerk – <strong>5df Como</strong> · GO! Atheneum Avelgem · Deadline: 27/05/2026 · Stagebedrijf: <strong>Team Wauw</strong></p>
+  <p>Stage eindwerk – <strong>5df Como</strong> · GO! Atheneum Avelgem · Stagebedrijf: <strong>Team Wauw</strong></p>
   <p style="margin-top:.4rem;font-size:.75rem;">Doorniksestreenweg 81a, 8500 Kortrijk · <a href="https://teamwauw.be" target="_blank">teamwauw.be</a></p>
 </footer>
 
@@ -397,6 +392,7 @@
     document.querySelectorAll('#main-nav button').forEach((b, i) => {
       b.classList.toggle('active', i === index);
     });
+    document.getElementById('hero-banner').style.display = index === 0 ? 'block' : 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
